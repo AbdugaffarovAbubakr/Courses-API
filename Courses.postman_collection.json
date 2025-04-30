@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "d55f8385-3887-4722-b078-5aef61d58868",
+		"name": "Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40646123",
+		"_collection_link": "https://www.postman.com/navigation-observer-21046897/workspace/abubakr/collection/40646123-d55f8385-3887-4722-b078-5aef61d58868?action=share&source=collection_link&creator=40646123"
+	},
+	"item": [
+		{
+			"name": "Create Courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"PHP\",\r\n    \"description\": \"Learn PHP\",\r\n    \"price\": 180,\r\n    \"teacherName\": \"Alisher\",\r\n    \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Curses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Courses by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/courses/68120e953b2defc10caece1b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"courses",
+						"68120e953b2defc10caece1b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Courses",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"C++ (Advanced)\",\r\n    \"description\": \"Learn C++ (Pro)\",\r\n    \"price\": 250,\r\n    \"teacherName\": \"Abdulhamid + Abror\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/courses/68120ee43b2defc10caece1d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"courses",
+						"68120ee43b2defc10caece1d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Courses",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/courses/68120f283b2defc10caece21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"courses",
+						"68120f283b2defc10caece21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
